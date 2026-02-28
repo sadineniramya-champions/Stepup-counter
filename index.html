@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Step-Up Counter</title>
+
+```
+<!-- PWA / iOS Safari home screen -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="StepUp" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#08080F" />
+
+<!-- App icons -->
+<link rel="apple-touch-icon" href="/icons/icon-192.png" />
+<link rel="icon" type="image/png" href="/icons/icon-192.png" />
+
+<!-- iOS Splash screens -->
+<link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.png"
+  media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3)" />
+<link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.png"
+  media="(device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3)" />
+<link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.png"
+  media="(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3)" />
+<link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.png"
+  media="(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2)" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: #08080F; overscroll-behavior: none; }
+  body {
+    padding-top:    env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left:   env(safe-area-inset-left);
+    padding-right:  env(safe-area-inset-right);
+  }
+  /* Prevent iOS zoom on input focus */
+  input, select, textarea, button { font-size: 16px; }
+  /* Remove tap highlight */
+  * { -webkit-tap-highlight-color: transparent; }
+</style>
+```
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
